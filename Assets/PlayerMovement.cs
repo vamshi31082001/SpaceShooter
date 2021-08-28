@@ -20,8 +20,5 @@ public class PlayerMovement : MonoBehaviour
 
         transform.Translate(new Vector3(xInput, transform.position.y, 0) * speed * Time.deltaTime);
         transform.position = new Vector3(Mathf.Clamp(transform.position.x, xmin, xmax), 0, 0);
-
-
-
     }
 }
